@@ -423,7 +423,8 @@ h2 {
 .slides-container {
     li .container {
         color: $white;
-        h1 {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        .maintitle {
             @extend .m-spacing-bottom;
             font-size: 57px;
             line-height: 67px;
@@ -440,5 +441,14 @@ h2 {
             font-weight: 300;
             line-height: 40px;
         }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .slides-container li .container .maintitle {
+        font-size: 32px;
+    }
+    .slides-container li .container .contrast {
+        font-size: 20px;
     }
 }
