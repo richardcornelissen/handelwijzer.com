@@ -410,3 +410,9 @@ h2 {
 .m-text-linethrough {
     text-decoration: line-through;
 }
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
