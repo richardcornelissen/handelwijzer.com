@@ -400,6 +400,9 @@ h2 {
 .m-spacing-bottom {
     margin-bottom:30px;
 }
+.m-spacing-top {
+    margin-top:30px;
+}
 
 .m-spacing-padding {
     padding:50px;
@@ -415,4 +418,27 @@ h2 {
     display: inline-block;
     vertical-align: middle;
     float: none;
+}
+
+.slides-container {
+    li .container {
+        color: $white;
+        h1 {
+            @extend .m-spacing-bottom;
+            font-size: 57px;
+            line-height: 67px;
+            color: $white;
+        }
+        hr {
+            margin: 0 25%;
+            width: auto;
+            border-color: $primary;
+        }
+        .contrast {
+            @extend .m-spacing-top;
+            font-size: 30px;
+            font-weight: 300;
+            line-height: 40px;
+        }
+    }
 }
