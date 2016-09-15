@@ -1,0 +1,175 @@
+﻿@import '_var.scss';
+
+body {
+    background:#fff;
+    font-family: $font;
+    color:$c-para;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    position: relative;
+}
+
+//COMPONENTS
+//==========
+//Buttons
+.btn-promo {
+    background-color: $primary;
+    border: 1px solid $primary;
+    padding: 15px;
+    margin: 10px 0;
+    color: #fff;
+    font-weight: bold;
+    line-height: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: 0;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    white-space: nowrap;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    -webkit-backface-visibility: hidden;
+
+    &:hover {
+        background-color:lighten($primary, 10%);
+	    color:$white;
+    }
+}
+
+//HEADER & NAV
+.header {
+    padding:15px 0;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.logo {
+    float:left;
+}
+nav {
+    float:right;    
+}
+.nav-menu {
+    display:block;
+    list-style:none;
+    padding:10px 0 0 0;
+    li {
+        display: inline-block;
+    }
+    a {
+        padding: 5px 0;
+        margin: 0 0 0 30px;
+        color:$primary;
+        font-weight:600;
+    }
+    li.active a {
+          border-bottom: 2px solid $primary;
+    }
+    a.btn {
+        padding: 5px 30px;
+		color:$white;
+
+		&:hover {
+			color:$white;
+		}
+    }
+    li a:hover, li a:focus {
+        color:lighten($primary, 10%);
+        text-decoration:none;
+    }
+}
+.responsive-menu {
+    display:none;
+    float:right;
+    margin:-10px 10px -10px 0;
+}
+
+//Footer
+footer {
+    background:$black-md;
+    color:#fff;
+    padding:30px 0;
+    a {
+        color:$white;
+    }
+    h4 {
+        color:$black-li;
+        margin:20px 0;
+    }
+}
+
+.btn.secondary {
+    background: white;
+    color: $primary;
+}
+
+//Typography
+h1, h2, h3, h4 {
+    font-weight:600;
+    color:$c-head;
+}
+h1 {
+    font-size:2em;
+}
+h2 {
+    font-size:1.8em;
+}
+h3 {
+    font-size:1.6em;
+    color:$secondary;
+}
+
+//Helpers
+.m-top {
+    margin-top:50px;
+}
+
+//Superslides
+//in HandelWijzer tekst altijd gecentreerd op het scherm
+.slides-container{
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 2;
+        width: 100%;
+        min-height: 260px;
+        padding-top: 5px;
+    }
+}
+#slides .slides-pagination {
+    bottom: 25px;
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .responsive-menu {
+        display:block;
+    }
+    nav {
+        display:none;
+        width:100%;        
+        margin-top: -20px;
+    }
+    .nav-menu li {
+        display: block;
+        padding: 5px;
+        border-bottom: 1px solid #eee;
+    }
+    .nav-menu li:last-child {
+        border:none;
+        text-align:center;
+    }
+}

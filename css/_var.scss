@@ -1,0 +1,28 @@
+﻿$primary: #002959;
+$secondary: #107FC2;
+$white:#ffffff;
+$black:#000000;
+$yellow: #f9cf54;
+$purple: #9b4e81;
+$green: #375d3b;
+
+
+$gray-li: #f9f9f9;
+$gray-md:#efefef;
+$gray-hi: #e0e0e0;
+$black-li: #676767;
+$black-md: #343434;
+$black-hi: #252525;
+
+$c-para: $black-md;
+$c-head: $primary;
+
+$font: 'Open Sans', arial, helvetica, sans-serif;
+
+@mixin transition-all($duration) {
+    -webkit-transition: all $duration ease;
+    -moz-transition: all $duration ease;
+    -ms-transition: all $duration ease;
+    -o-transition: all $duration ease;
+    transition: all $duration ease;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TODO" />
+    <meta name="theme-color" content="#1b4164">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Handel wijzer">
+    <link rel="icon" sizes="228x228" href="/images/vlinder228x228.png">
+    <link rel="apple-touch-icon" href="/images/vlinder228x228.png">
+    <meta name="msapplication-square70x70logo" content="./images/vlinder70x70.png">
+    <meta name="msapplication-square150x150logo" content="/images/vlinder150x150.png">
+    <meta name="msapplication-square310x310logo" content="/images/vlinder310x310.png">
+    <title>{{ page.title }}</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="/css/layout.min.css" rel="stylesheet" />
+    <link href="/css/site.min.css" rel="stylesheet" />
+    <link href="/css/superslides.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body id="home">
+    <div id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav id="nav">
+                        <ul class="nav-menu">
+                            <li data-anchor="home"><a href="#home">Home</a></li>
+                            <li data-anchor="diensten"><a href="#diensten">Diensten</a></li>
+                            <li data-anchor="footer"><a href="#footer">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="logo">
+                        <a href="#home"><img src="/images/handelwijzer_tekst.svg" alt="Dragness" height="38" /></a>
+                    </div>
+                    <!-- End Logo -->
+
+                    <div class="responsive-menu">
+                        <a class="btn btn-promo secondary" id="responsive-menu"><img src="/images/icon-menu.svg" alt="Menu Icon" width="15" height="13" /> Menu </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="content-wrapper main-content clear-fix">
+    {{ content }}
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row ws-footer" id="footer">
+                <div class="col-md-6 col-sm-6">
+                    <h4>Contact</h4>
+                    <p>TBD, Apeldoorn</p>
+                    <p>
+                        Tel: TBD<br />
+                        Mail: <a href="mailto:info@handelwijzer.com" title="Stuur direct een e-mail naar Handel wijzer">info@handelwijzer.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery-2.2.4.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery.superslides.min.js"></script>
+</body>
+
+</html>
