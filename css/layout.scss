@@ -3,7 +3,7 @@
 body {
     background:#fff;
     font-family: $font;
-    color:$c-para;
+    color:$black-md;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
@@ -14,8 +14,8 @@ body {
 //==========
 //Buttons
 .btn-promo {
-    background-color: $primary;
-    border: 1px solid $primary;
+    background-color: $brand-primary;
+    border: 1px solid $brand-primary;
     padding: 15px;
     margin: 10px 0;
     color: #fff;
@@ -38,7 +38,7 @@ body {
     -webkit-backface-visibility: hidden;
 
     &:hover {
-        background-color:lighten($primary, 10%);
+        background-color:lighten($brand-primary, 10%);
 	    color:$white;
     }
 }
@@ -68,11 +68,11 @@ nav {
     a {
         padding: 5px 0;
         margin: 0 0 0 30px;
-        color:$primary;
+        color:$brand-primary;
         font-weight:600;
     }
     li.active a {
-          border-bottom: 2px solid $primary;
+          border-bottom: 2px solid $brand-primary;
     }
     a.btn {
         padding: 5px 30px;
@@ -83,7 +83,7 @@ nav {
 		}
     }
     li a:hover, li a:focus {
-        color:lighten($primary, 10%);
+        color:lighten($brand-primary, 10%);
         text-decoration:none;
     }
 }
@@ -109,13 +109,13 @@ footer {
 
 .btn.secondary {
     background: white;
-    color: $primary;
+    color: $brand-primary;
 }
 
 //Typography
 h1, h2, h3, h4 {
     font-weight:600;
-    color:$c-head;
+    color:$brand-primary;
 }
 h1 {
     font-size:2em;
@@ -125,10 +125,10 @@ h2 {
 }
 h3 {
     font-size:1.6em;
-    color:$secondary;
+    color:$brand-secondary;
 }
 h4 {
-    color:$secondary;
+    color:$brand-secondary;
 }
 
 //Helpers
