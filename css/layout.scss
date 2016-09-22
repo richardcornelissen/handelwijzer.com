@@ -122,7 +122,9 @@ h1 {
 }
 h2 {
     font-size:1.8em;
+    margin: 40px 0 40px 0;
 }
+
 h3 {
     font-size:1.6em;
     color:$brand-secondary;
@@ -132,8 +134,28 @@ h4 {
 }
 
 //Helpers
-.m-top {
-    margin-top:50px;
+.m-spacing-bottom {
+    margin-bottom:30px;
+}
+.m-spacing-top {
+    margin-top:30px;
+}
+
+.m-spacing-padding {
+    padding:50px;
+}
+.hw-title {
+    margin-top: 80px;
+}
+
+.m-text-linethrough {
+    text-decoration: line-through;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 
 //Superslides
@@ -149,10 +171,39 @@ h4 {
         width: 100%;
         min-height: 260px;
         padding-top: 5px;
+
+        color: $white;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        .maintitle {
+            @extend .m-spacing-bottom;
+            font-size: 57px;
+            line-height: 67px;
+            color: $white;
+        }
+        hr {
+            margin: 0 25%;
+            width: auto;
+            border-color: $brand-primary;
+        }
+        .contrast {
+            @extend .m-spacing-top;
+            font-size: 30px;
+            font-weight: 300;
+            line-height: 40px;
+        }
     }
 }
 #slides .slides-pagination {
     bottom: 25px;
+}
+
+@media only screen and (max-width: 767px){
+    .slides-container li .container .maintitle {
+        font-size: 32px;
+    }
+    .slides-container li .container .contrast {
+        font-size: 20px;
+    }
 }
 
 /*==========  Non-Mobile First Method  ==========*/
