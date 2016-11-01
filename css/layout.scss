@@ -1,5 +1,4 @@
 ﻿@import '_var.scss';
-
 body {
     background:#fff;
     font-family: $font;
@@ -155,7 +154,6 @@ h4 {
 .vcenter {
     display: inline-block;
     vertical-align: middle;
-    float: none;
 }
 
 //Superslides
@@ -163,7 +161,7 @@ h4 {
 .slides-container{
     .container {
         position: absolute;
-        top: 50%;
+        top: 30%;
         left: 0;
         right: 0;
         text-align: center;
@@ -195,6 +193,20 @@ h4 {
 }
 #slides .slides-pagination {
     bottom: 25px;
+}
+
+#call-to-action{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    z-index: 10000;
+    margin-top: 200px;
+
+    form {
+        background: rgba(255, 255, 255, 0.5);
+        padding: 30px;
+        margin: 0 70px;
+    }
 }
 
 @media only screen and (max-width: 767px){
